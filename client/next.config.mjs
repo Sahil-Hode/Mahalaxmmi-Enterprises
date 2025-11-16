@@ -1,7 +1,10 @@
+import path from 'node:path';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  turbopack: {
+    root: path.resolve(import.meta.dirname), // Equivalent to __dirname in ES modules
+  },
 };
 
 export default nextConfig;
