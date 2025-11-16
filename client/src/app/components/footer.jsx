@@ -110,7 +110,7 @@ export default function Footer() {
               <div>
                 <h5 className="text-gray-400 font-medium mb-1">Email</h5>
                 <p className="text-gray-300 flex items-center gap-2">
-                  <FaEnvelope className="text-blue-400" /> anushka.more08@gmail.com
+                  <FaEnvelope className="text-blue-400" /> sarthakmore0803@gmail.com
                 </p>
               </div>
             </div>

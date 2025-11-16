@@ -41,7 +41,7 @@ export default function Banks() {
           </div>
           
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Our Banking Partners
+            Our Listed Banking
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

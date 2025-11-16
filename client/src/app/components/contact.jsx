@@ -58,7 +58,7 @@ export default function ContactForm() {
     {
       icon: <MapPin className="w-6 h-6 text-orange-600" />,
       title: "Visit Office",
-      detail: "KShop No. 21, Jeevan Jyot CHSL,Sai Jyot Apartment, Nr. Apollo Chemist,Gupte Road, Dombivli (W) ",
+      detail: "Shop No. 21, Jeevan Jyot CHSL, Sai Jyot Apartment, Nr. Apollo Chemist, Gupte Road, Dombivli (W)",
       subtitle: "Dombivli 421202",
     },
   ];
@@ -140,7 +140,6 @@ export default function ContactForm() {
               className="bg-white rounded-2xl border-2 border-gray-200 p-8 shadow-sm hover:shadow-lg transition-all duration-300"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
                 {/* Name */}
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
@@ -230,31 +229,30 @@ export default function ContactForm() {
                 </button>
               </div>
 
-              {/* Form Status */}
+              {/* Form Status - FIXED: Using div instead of p to avoid nesting div inside p */}
               <div className="mt-6">
                 {status === "success" && (
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
-                    <p className="text-green-700 font-medium flex items-center justify-center gap-2">
+                    <div className="text-green-700 font-medium flex items-center justify-center gap-2">
                       <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
                         <div className="w-2 h-1 border-b-2 border-r-2 border-white transform rotate-45 -translate-y-0.5"></div>
                       </div>
                       Message sent successfully! Our team will contact you soon.
-                    </p>
+                    </div>
                   </div>
                 )}
 
                 {status === "error" && (
                   <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-                    <p className="text-red-700 font-medium flex items-center justify-center gap-2">
+                    <div className="text-red-700 font-medium flex items-center justify-center gap-2">
                       <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
                         !
                       </div>
                       Something went wrong. Please try again.
-                    </p>
+                    </div>
                   </div>
                 )}
               </div>
-
             </form>
           </div>
         </div>

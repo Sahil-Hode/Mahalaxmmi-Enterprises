@@ -1,23 +1,36 @@
-import nodemailer from "nodemailer";
+import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   try {
     const body = await req.json();
     const { name, email, phone, message } = body;
 
-    // Configure transporter
+    console.log("Received form data:", { name, email, phone, message });
+
+    // Validate required fields
+    if (!name || !email || !phone || !message) {
+      return Response.json(
+        { success: false, message: "All fields are required" },
+        { status: 400 }
+      );
+    }
+
+    // Configure transporter - CORRECTED: Using createTransport instead of createTransporter
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, 
-        pass: process.env.EMAIL_PASS, 
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
+    // Verify credentials
+    await transporter.verify();
+
     const mailOptions = {
-      from: `"Mahalaxmi Enterprises" <${process.env.EMAIL_USER}>`,
+      from: `" Shree Mahalaxmi Enterprises" <${process.env.EMAIL_USER}>`,
       to: "sarthakmore0803@gmail.com",
-      subject: "📩 New Inquiry – Mahalaxmi Enterprises",
+      subject: "📩 New Inquiry – Shree Mahalaxmi Enterprises",
       html: `
       <div style="font-family: Arial, sans-serif; background:#f5f5f5; padding:20px;">
         <div style="max-width:600px; margin:auto; background:white; border-radius:12px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
@@ -73,15 +86,22 @@ export async function POST(req) {
       `,
     };
 
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully:", info.messageId);
 
     return Response.json({
       success: true,
       message: "Message sent successfully!",
     });
   } catch (error) {
+    console.error("Email error:", error);
+    
     return Response.json(
-      { success: false, message: "Something went wrong", error },
+      { 
+        success: false, 
+        message: "Failed to send email",
+        error: error.message 
+      },
       { status: 500 }
     );
   }
