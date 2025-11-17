@@ -42,7 +42,7 @@ export default function Footer() {
             <div className="bg-gray-800 border border-gray-700 rounded-md p-3 inline-flex items-center gap-2">
               <FaCheckCircle className="text-orange-500" />
               <p className="text-orange-500 text-sm font-medium">
-                MahaRERA Registered: A5770002039
+                MahaRERA Registered: A011332500959
               </p>
             </div>
           </div>

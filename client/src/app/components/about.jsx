@@ -7,7 +7,7 @@ export default function About() {
   const features = [
     {
       icon: <FileCheck className="w-6 h-6 text-purple-600" />,
-      text: "MahaRERA Registered – A5770002039"
+      text: "MahaRERA Registered – A011332500959"
     },
     {
       icon: <MapPin className="w-6 h-6 text-orange-600" />,

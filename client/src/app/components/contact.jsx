@@ -46,7 +46,7 @@ export default function ContactForm() {
     {
       icon: <Phone className="w-6 h-6 text-orange-600" />,
       title: "Call Us",
-      detail: "+91 9702211048",
+      detail: "+91 9702211049",
       subtitle: "Mon-Sun: 9AM - 8PM",
     },
     {

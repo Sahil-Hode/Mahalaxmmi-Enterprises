@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import CertificateModal from "./certificate"; // ⭐ ADDED
 
 export default function Hero() {
+
+  const [showCertificate, setShowCertificate] = React.useState(false); // ⭐ ADDED
+
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden -mt-16 pb-7">
       {/* Background Image */}
@@ -110,8 +114,12 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14 animate-fade-in-up animation-delay-500">
-          {/* Primary Button (Orange Theme) */}
-          <button className="group bg-[#FF7A00] hover:bg-[#E96A00] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105 relative overflow-hidden">
+
+          {/* ⭐ UPDATED BUTTON — ADDED ONLY onClick */}
+          <button 
+            onClick={() => setShowCertificate(true)} 
+            className="group bg-[#FF7A00] hover:bg-[#E96A00] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105 relative overflow-hidden"
+          >
             <span className="relative z-10">View Certificate →</span>
           </button>
 
@@ -122,7 +130,6 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-3 border border-[#FF7A00] text-white hover:bg-[#FF7A00]/20 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105"
           >
-            {/* WhatsApp Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -170,6 +177,11 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+      {/* Certificate Modal ⭐ ADDED */}
+      {showCertificate && (
+        <CertificateModal onClose={() => setShowCertificate(false)} />
+      )}
 
       {/* Animations */}
       <style jsx>{`
