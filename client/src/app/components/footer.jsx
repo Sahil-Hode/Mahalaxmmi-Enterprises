@@ -148,7 +148,7 @@ export default function Footer() {
                 },
                 { 
                   icon: <FaFacebook />, 
-                  url: "https://facebook.com/your-profile", 
+                  url: "https://facebook.com/profile", 
                   label: "Facebook" 
                 },
                 { 
