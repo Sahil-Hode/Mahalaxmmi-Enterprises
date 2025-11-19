@@ -55,21 +55,21 @@ export default function Footer() {
 
             <ul className="space-y-3">
               {[
-                "Home",
-                "About Us",
-                "Services",
-                "Process",
-                "Projects",
-                "Authorized Partners",
-                "Contact Us",
+                { name: "Home", url: "#" },
+                { name: "About Us", url: "#" },
+                { name: "Services", url: "#" },
+                { name: "Process", url: "#" },
+                { name: "Projects", url: "#" },
+                { name: "Authorized Partners", url: "#" },
+                { name: "Contact Us", url: "#" },
               ].map((link) => (
-                <li key={link}>
+                <li key={link.name}>
                   <a
-                    href="#"
+                    href={link.url}
                     className="text-gray-300 hover:text-orange-500 transition-all duration-200 flex items-center group"
                   >
                     <FaArrowRight className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -96,22 +96,38 @@ export default function Footer() {
               {/* PHONES */}
               <div>
                 <h5 className="text-gray-400 font-medium mb-1">Phone Numbers</h5>
-                {["97022 11049", "81082 66910", "91364 20488"].map((p) => (
-                  <p className="text-gray-300 flex items-center gap-2" key={p}>
-                    <FaPhoneAlt className="text-orange-500" /> {p}
-                  </p>
+                {[
+                  { number: "97022 11049", tel: "tel:+919702211049" },
+                  { number: "81082 66910", tel: "tel:+918108266910" },
+                  { number: "91364 20488", tel: "tel:+919136420488" }
+                ].map((phone) => (
+                  <a 
+                    href={phone.tel} 
+                    key={phone.number}
+                    className="text-gray-300 flex items-center gap-2 hover:text-orange-500 transition-colors"
+                  >
+                    <FaPhoneAlt className="text-orange-500" /> {phone.number}
+                  </a>
                 ))}
-                <p className="text-gray-300 flex items-center gap-2">
+                <a 
+                  href="https://wa.me/919987835035" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 flex items-center gap-2 hover:text-green-500 transition-colors"
+                >
                   <FaWhatsapp className="text-green-500" /> WhatsApp: 9987835035
-                </p>
+                </a>
               </div>
 
               {/* EMAIL */}
               <div>
                 <h5 className="text-gray-400 font-medium mb-1">Email</h5>
-                <p className="text-gray-300 flex items-center gap-2">
+                <a 
+                  href="mailto:sarthakmore0803@gmail.com"
+                  className="text-gray-300 flex items-center gap-2 hover:text-blue-400 transition-colors"
+                >
                   <FaEnvelope className="text-blue-400" /> sarthakmore0803@gmail.com
-                </p>
+                </a>
               </div>
             </div>
           </div>
@@ -125,14 +141,29 @@ export default function Footer() {
 
             <div className="flex space-x-4 mb-8">
               {[
-                { icon: <FaInstagram />, color: "pink" },
-                { icon: <FaFacebook />, color: "blue" },
-                { icon: <FaWhatsapp />, color: "green" },
+                { 
+                  icon: <FaInstagram />, 
+                  url: "https://instagram.com/your-profile", 
+                  label: "Instagram" 
+                },
+                { 
+                  icon: <FaFacebook />, 
+                  url: "https://facebook.com/your-profile", 
+                  label: "Facebook" 
+                },
+                { 
+                  icon: <FaWhatsapp />, 
+                  url: "https://wa.me/919987835035", 
+                  label: "WhatsApp" 
+                },
               ].map((social, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-orange-500 transition-all duration-300 hover:scale-110"
+                  aria-label={social.label}
                 >
                   <span className="text-xl">{social.icon}</span>
                 </a>
