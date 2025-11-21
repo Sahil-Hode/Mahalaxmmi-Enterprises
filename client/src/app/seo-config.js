@@ -23,7 +23,7 @@ export const seoConfig = {
       siteName: 'Shree Mahalaxmi Enterprises',
       images: [
         {
-          url: '/images/og-image.jpg',
+          url: '/images/mahalaxmi.png',
           width: 1200,
           height: 630,
           alt: 'Shree Mahalaxmi Enterprises - Real Estate Services',
