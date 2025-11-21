@@ -109,7 +109,6 @@ const Map = () => {
                   <h4 className="font-semibold text-[#5C3526] text-sm mb-2">Landmarks:</h4>
                   <ul className="text-[#5C3526]/70 text-sm space-y-1">
                     <li>• Near Apollo Chemist</li>
-                    <li>• Opposite Sai Jyot Apartment</li>
                     <li>• Gupte Road, Dombivli West</li>
                   </ul>
                 </div>
@@ -142,8 +141,6 @@ const Map = () => {
             <div className="bg-gradient-to-r from-[#E06B23] to-[#8A4B2B] rounded-2xl p-6 text-white">
               <h3 className="text-lg font-bold mb-2">Visitor Information</h3>
               <ul className="text-white/90 text-sm space-y-2">
-                <li>✅ Ample parking space available</li>
-                <li>✅ Wheelchair accessible</li>
                 <li>✅ Free consultation</li>
                 <li>✅ Site visit arrangements</li>
               </ul>

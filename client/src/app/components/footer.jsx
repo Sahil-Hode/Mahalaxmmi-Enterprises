@@ -56,12 +56,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { name: "Home", url: "#" },
-                { name: "About Us", url: "#" },
-                { name: "Services", url: "#" },
-                { name: "Process", url: "#" },
-                { name: "Projects", url: "#" },
-                { name: "Authorized Partners", url: "#" },
-                { name: "Contact Us", url: "#" },
+                { name: "About Us", url: "#about" },
+                { name: "Services", url: "#services" },
+                { name: "Process", url: "#process" },
+                { name: "Map", url: "#location" },
+                { name: "Authorized Partners", url: "#partners" },
+                { name: "Listed Banks", url: "#banks"},
+                { name: "Contact Us", url: "#contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <a
@@ -143,12 +144,12 @@ export default function Footer() {
               {[
                 { 
                   icon: <FaInstagram />, 
-                  url: "https://instagram.com/your-profile", 
+                  url: "https://instagram.com/shree_mahalaxmi_estate_agency", 
                   label: "Instagram" 
                 },
                 { 
                   icon: <FaFacebook />, 
-                  url: "https://facebook.com/profile", 
+                  url: "https://facebook.com/anushka.more.908", 
                   label: "Facebook" 
                 },
                 { 
