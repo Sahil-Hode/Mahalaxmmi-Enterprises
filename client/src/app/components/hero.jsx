@@ -83,7 +83,7 @@ export default function Hero() {
             ))}
           </div>
           <span className="text-white font-semibold text-sm sm:text-base">
-            Premium Real Estate Services
+            Premium Services
           </span>
         </div>
 
