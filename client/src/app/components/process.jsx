@@ -125,8 +125,37 @@ const Process = () => {
           </p>
         </div>
 
-        {/* Vertical Timeline */}
-        <div className="relative">
+        {/* Mobile View - Stacked Cards */}
+        <div className="md:hidden space-y-6">
+          {steps.map((step, index) => {
+            const colorClasses = getColorClasses(step.color);
+            
+            return (
+              <div 
+                key={step.id}
+                className={`flex items-start gap-4 p-6 rounded-xl ${colorClasses.light} border ${colorClasses.border} shadow-sm hover:shadow-md transition-all duration-300`}
+              >
+                {/* Icon Circle */}
+                <div className={`w-12 h-12 rounded-full ${colorClasses.bg} text-white flex items-center justify-center flex-shrink-0`}>
+                  {step.icon}
+                </div>
+                
+                {/* Content */}
+                <div>
+                  <h3 className={`text-lg font-bold ${colorClasses.text} mb-2`}>
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Desktop/Tablet View - Vertical Timeline */}
+        <div className="hidden md:block relative">
           {/* Center Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-purple-200 to-emerald-200 rounded-full"></div>
           
@@ -181,20 +210,7 @@ const Process = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16 animate-fade-in-up animation-delay-800">
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to Start Your Journey?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Let us guide you through every step of your real estate journey with expertise and care.
-            </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-              Start Your Process Today
-            </button>
-          </div>
-        </div>
+       
       </div>
 
       {/* Animations */}
