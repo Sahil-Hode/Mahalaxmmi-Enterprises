@@ -10,6 +10,11 @@ import {
   Wallet,
   HandCoins,
 } from "lucide-react";
+import { seoConfig } from '@/app/seo-config';
+
+export async function generateMetadata() {
+  return seoConfig.generatePageMetadata('services');
+}
 
 export default function Services() {
   const services = [

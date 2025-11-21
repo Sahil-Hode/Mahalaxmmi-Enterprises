@@ -3,6 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { CheckCircle, FileCheck, MapPin, Handshake } from "lucide-react";
 
+import { seoConfig } from '@/app/seo-config';
+
+export async function generateMetadata() {
+  return seoConfig.generatePageMetadata('about');
+}
 export default function About() {
   const features = [
     {
