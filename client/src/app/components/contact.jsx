@@ -19,19 +19,33 @@ export default function ContactForm() {
     setLoading(true);
     setStatus("");
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-    };
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const message = e.target.message.value;
 
+    const formData = { name, email, phone, message };
+
+    // 1️⃣ SEND FORM TO NEXT.JS API (Email sender)
     const res = await fetch("/api/contact", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(formData),
     });
 
     const data = await res.json();
+
+    // 2️⃣ SEND DATA TO N8N WEBHOOK (WhatsApp automation)
+    await fetch("http://localhost:5678/webhook-test/realestate-land", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
     setLoading(false);
 
     if (data.success) {
@@ -58,7 +72,8 @@ export default function ContactForm() {
     {
       icon: <MapPin className="w-6 h-6 text-orange-600" />,
       title: "Visit Office",
-      detail: "Shop No. 21, Jeevan Jyot CHSL, Sai Jyot Apartment, Nr. Apollo Chemist, Gupte Road, Dombivli (W)",
+      detail:
+        "Shop No. 21, Jeevan Jyot CHSL, Sai Jyot Apartment, Nr. Apollo Chemist, Gupte Road, Dombivli (W)",
       subtitle: "Dombivli 421202",
     },
   ];

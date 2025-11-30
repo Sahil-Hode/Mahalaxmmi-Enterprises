@@ -34,7 +34,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/about.png"
-                alt="Mahalaxmi Enterprises - Trusted Real Estate Consultancy"
+                alt="Mahalaxmmi Enterprises - Trusted Real Estate Consultancy"
                 width={600}
                 height={600}
                 className="w-full h-auto object-cover"
@@ -63,7 +63,7 @@ export default function About() {
             {/* Description */}
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed text-lg">
-                <span className="font-semibold text-blue-600">Mahalaxmi Enterprises</span> is a trusted real estate consultancy working since 2011, backed by <span className="font-semibold">17+ years</span> of industry experience.
+                <span className="font-semibold text-blue-600">Mahalaxmmi Enterprises</span> is a trusted real estate consultancy working since 2011, backed by <span className="font-semibold">17+ years</span> of industry experience.
               </p>
               
               <p className="text-gray-700 leading-relaxed text-lg">

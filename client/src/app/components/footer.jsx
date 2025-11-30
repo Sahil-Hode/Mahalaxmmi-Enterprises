@@ -24,7 +24,7 @@ export default function Footer() {
           {/* BRAND SECTION */}
           <div>
             <h3 className="text-2xl font-bold text-orange-500">
-              Mahalaxmi Enterprises
+              Mahalaxmmi Enterprises
             </h3>
             <p className="text-gray-400 text-sm mt-1 mb-4">
               Real Estate Agency

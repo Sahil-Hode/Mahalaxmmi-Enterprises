@@ -5,8 +5,7 @@ const nextConfig = {
   turbopack: {
     root: path.resolve(import.meta.dirname), // Equivalent to __dirname in ES modules
   },
-  reactStrictMode: true,
-  swcMinify: true,
+  reactStrictMode: true
 };
 
 export default nextConfig;
