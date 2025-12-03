@@ -19,15 +19,15 @@ export default function ContactForm() {
     setLoading(true);
     setStatus("");
 
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const phone = e.target.phone.value;
-    const message = e.target.message.value;
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+    };
 
-    const formData = { name, email, phone, message };
-
-    // 1️⃣ SEND FORM TO NEXT.JS API (Email sender)
-    const res = await fetch("/api/contact", {
+    // Send Email (Next.js API)
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,25 +35,13 @@ export default function ContactForm() {
       body: JSON.stringify(formData),
     });
 
-    const data = await res.json();
-
-    // 2️⃣ SEND DATA TO N8N WEBHOOK (WhatsApp automation)
-    await fetch("http://localhost:5678/webhook-test/realestate-land", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    setLoading(false);
-
-    if (data.success) {
+    if (response.ok) {
       setStatus("success");
-      e.target.reset();
     } else {
       setStatus("error");
     }
+
+    setLoading(false);
   }
 
   const contactInfo = [
