@@ -1,16 +1,16 @@
 // app/seo-config.js
 export const seoConfig = {
   // Base domain configuration
-  domain: 'https://shrimahalaxmienterprises.co.in',
+  domain: 'shreemahalaxmmienterprises.co.in',
   
   // Global SEO settings
   global: {
     title: {
-      default: "Shree Mahalaxmi Enterprises - Real Estate Experts in Kalyan Dombivli",
-      template: "%s | Shree Mahalaxmi Enterprises"
+      default: "Shree Mahalaxmmmi Enterprises - Real Estate Experts in Kalyan Dombivli",
+      template: "%s | Shree Mahalaxmmi Enterprises"
     },
     description: "Trusted real estate consultancy since 2011. Residential, Commercial & Rental services in Kalyan-Dombivli-Thane. MahaRERA Registered A011332500959",
-    keywords: ["real estate", "property", "kalyan", "dombivli", "thane", "buy property", "sell property", "rental", "maha rera", "commercial property", "residential property"],
+    keywords: ["real estate", "property", "kalyan", "dombivli", "thane", "buy property", "sell property", "rental", "maha rera", "commercial property", "residential property", "mahalxmmi enterprises", "mahalaxmi enterprises", "real estate"],
     authors: [{ name: "Shree Mahalaxmi Enterprises" }],
     robots: {
       index: true,
