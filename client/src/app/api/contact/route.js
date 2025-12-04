@@ -89,7 +89,7 @@ Shree Mahalaxmmi Enterprises 🏡
 
     const mailOptions = {
       from: `" Shree Mahalaxmi Enterprises" <${process.env.EMAIL_USER}>`,
-      to: "info@innovoxsoftwaresolutions.co.in",
+      to: "sahilhode67@gmail.com",
       subject: "📩 New Inquiry – Shree Mahalaxmi Enterprises",
       html: `
       <div style="font-family: Arial, sans-serif; background:#f5f5f5; padding:20px;">
