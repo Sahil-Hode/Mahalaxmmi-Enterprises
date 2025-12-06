@@ -6,7 +6,7 @@ export const seoConfig = {
   // Global SEO settings
   global: {
     title: {
-      default: "Shree Mahalaxmmmi Enterprises",
+      default: "Shree Mahalaxmmi Enterprises",
       template: "%s | Shree Mahalaxmmi Enterprises"
     },
     description: "Trusted real estate consultancy since 2011. Residential, Commercial & Rental services in Kalyan-Dombivli-Thane. MahaRERA Registered A011332500959",
@@ -23,7 +23,7 @@ export const seoConfig = {
       siteName: 'Shree Mahalaxmmi Enterprises',
       images: [
         {
-          url: '/mahalaxmi.png',
+          url: '/logo.png',
           width: 1200,
           height: 630,
           alt: 'Shree Mahalaxmmi Enterprises - Real Estate Services',
