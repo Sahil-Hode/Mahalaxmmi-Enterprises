@@ -13,9 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL(seoConfig.domain),
+  metadataBase: new URL("https://shreemahalaxmmienterprises.co.in"),
+
   ...seoConfig.global,
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
