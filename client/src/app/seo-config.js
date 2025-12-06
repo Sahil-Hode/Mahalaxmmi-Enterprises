@@ -65,7 +65,7 @@ export const seoConfig = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Shree Mahalaxmmi Enterprises",
-      "image": "/mahalaxmi.png",
+      "image": "/logo.png",
       "telephone": "+91-9702211049",
       "email": "sarthakmore0803@gmail.com",
       "address": {
