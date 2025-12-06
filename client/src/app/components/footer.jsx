@@ -98,9 +98,9 @@ export default function Footer() {
               <div>
                 <h5 className="text-gray-400 font-medium mb-1">Phone Numbers</h5>
                 {[
-                  { number: "97022 11049", tel: "tel:+919702211049" },
+                  { number: "72088 14876", tel: "tel:+917208814876" },
                   { number: "81082 66910", tel: "tel:+918108266910" },
-                  { number: "91364 20488", tel: "tel:+919136420488" }
+                  { number: "91364 20488", tel: "tel:+917208814876" }
                 ].map((phone) => (
                   <a 
                     href={phone.tel} 
