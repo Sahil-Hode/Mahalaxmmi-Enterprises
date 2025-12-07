@@ -1,17 +1,17 @@
 // app/seo-config.js
 export const seoConfig = {
   // Base domain configuration
-  domain: 'https://shreemahalaxmmienterprises.co.in',
+  domain: 'https://shreeMahalaxmmi enterprises.co.in',
   
   // Global SEO settings
   global: {
     title: {
-      default: "Shree Mahalaxmmi Enterprises",
-      template: "%s | Shree Mahalaxmmi Enterprises"
+      default: "Shree Mahalaxmmi  Enterprises",
+      template: "%s | Shree Mahalaxmmi  Enterprises"
     },
     description: "Trusted real estate consultancy since 2011. Residential, Commercial & Rental services in Kalyan-Dombivli-Thane. MahaRERA Registered A011332500959",
-    keywords: ["real estate", "property", "kalyan", "dombivli", "thane", "buy property", "sell property", "rental", "maha rera", "commercial property", "residential property", "mahalxmmi enterprises", "Mahalaxmmi enterprises", "real estate"],
-    authors: [{ name: "Shree Mahalaxmmi Enterprises" }],
+    keywords: ["real estate", "property", "kalyan", "dombivli", "thane", "buy property", "sell property", "rental", "maha rera", "commercial property", "residential property", "mahalxmmi enterprises", "Mahalaxmmi  enterprises", "real estate"],
+    authors: [{ name: "Shree Mahalaxmmi  Enterprises" }],
     robots: {
       index: true,
       follow: true,
@@ -20,13 +20,13 @@ export const seoConfig = {
       type: 'website',
       locale: 'en_IN',
       url: '/',
-      siteName: 'Shree Mahalaxmmi Enterprises',
+      siteName: 'Shree Mahalaxmmi  Enterprises',
       images: [
         {
           url: '/logo.png',
           width: 1200,
           height: 630,
-          alt: 'Shree Mahalaxmmi Enterprises - Real Estate Services',
+          alt: 'Shree Mahalaxmmi  Enterprises - Real Estate Services',
         },
       ],
     },
@@ -38,13 +38,13 @@ export const seoConfig = {
   // Page-specific overrides
   pages: {
     home: {
-      title: "Shree Mahalaxmmi Enterprises",
+      title: "Shree Mahalaxmmi  Enterprises",
       description: "Trusted real estate consultancy since 2011. Residential, Commercial & Rental services in Kalyan-Dombivli-Thane. MahaRERA Registered A011332500959",
       keywords: ["real estate", "property", "kalyan", "dombivli", "thane", "buy property", "sell property", "rental", "maha rera"],
     },
     about: {
-      title: "About Shree Mahalaxmmi Enterprises - Trusted Real Estate Consultant Since 2011",
-      description: "Learn about Shree Mahalaxmmi Enterprises, a MahaRERA registered real estate consultancy with 17+ years of experience in Kalyan-Dombivli-Thane region.",
+      title: "About Shree Mahalaxmmi  Enterprises - Trusted Real Estate Consultant Since 2011",
+      description: "Learn about Shree Mahalaxmmi  Enterprises, a MahaRERA registered real estate consultancy with 17+ years of experience in Kalyan-Dombivli-Thane region.",
       keywords: ["about real estate", "property consultant", "kalyan", "dombivli", "thane", "maha rera", "property services"],
     },
     services: {
@@ -64,7 +64,7 @@ export const seoConfig = {
     localBusiness: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Shree Mahalaxmmi Enterprises",
+      "name": "Shree Mahalaxmmi  Enterprises",
       "image": "/logo.png",
       "telephone": "+91-9702211049",
       "email": "sarthakmore0803@gmail.com",
@@ -84,10 +84,10 @@ export const seoConfig = {
       "openingHours": "Mo-Su 09:00-20:00",
       "areaServed": ["Kalyan", "Dombivli", "Thane"],
       "serviceType": ["Real Estate Services", "Property Consultation", "Property Sales", "Property Rentals", "Commercial Real Estate", "Home Loans", "Property Documentation"],
-      "url": "https://shriMahalaxmmienterprises.co.in",
+      "url": "https://shriMahalaxmmi enterprises.co.in",
       "sameAs": [
-        "https://instagram.com/Mahalaxmmienterprises",
-        "https://facebook.com/Mahalaxmmienterprises"
+        "https://instagram.com/Mahalaxmmi enterprises",
+        "https://facebook.com/Mahalaxmmi enterprises"
       ]
     }
   },
