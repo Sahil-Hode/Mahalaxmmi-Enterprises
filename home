@@ -1,0 +1,11 @@
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDKJpk2MEnuJDhANM8arLSMTIVMRvTrq4Sm1Qam/KYDkQAAAJjAFLbCwBS2
+wgAAAAtzc2gtZWQyNTUxOQAAACDKJpk2MEnuJDhANM8arLSMTIVMRvTrq4Sm1Qam/KYDkQ
+AAAECByzzT/Ejgpontki2Pa+AS5GijNW5p2PKR40inDOlPG8ommTYwSe4kOEA0zxqstIxM
+hUxG9OurhKbVBqb8pgORAAAAFXNhaGlsaG9kZTY3QGdtYWlsLmNvbQ==
+-----END OPENSSH PRIVATE KEY-----
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile /home/sahil-hode/home
