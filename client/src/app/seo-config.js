@@ -23,7 +23,7 @@ export const seoConfig = {
       siteName: 'Shree Mahalaxmmi  Enterprises',
       images: [
         {
-          url: 'https://shreemahalaxmmienterprises.co.in/logo.png',
+          url: 'https://shreemahalaxmmienterprises.co.in/favicon-new.ico',
           width: 1200,
           height: 630,
           alt: 'Shree Mahalaxmmi  Enterprises - Real Estate Services',
@@ -65,7 +65,7 @@ export const seoConfig = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Shree Mahalaxmmi  Enterprises",
-      "image": "/logo.png",
+      "image": "/favicon-new.ico",
       "telephone": "+91-9702211049",
       "email": "sarthakmore0803@gmail.com",
       "address": {
