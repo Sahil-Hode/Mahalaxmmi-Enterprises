@@ -1,0 +1,5 @@
+EMAIL_USER=sahilhode67@gmail.com
+EMAIL_PASS=zajx ibss bxxv xuzj
+
+ULTRA_INSTANCE_ID=instance154197
+ULTRA_TOKEN=k96sbyv77b4ntqv7
