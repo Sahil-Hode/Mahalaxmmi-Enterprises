@@ -18,11 +18,12 @@ export const metadata = {
   ...seoConfig.global,
 
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.png",
+    icon: "https://shreemahalaxmmienterprises.co.in/favicon.ico",
+    shortcut: "https://shreemahalaxmmienterprises.co.in/favicon.ico",
+    apple: "https://shreemahalaxmmienterprises.co.in/favicon.png",
   },
 };
+
 
 
 export default function RootLayout({ children }) {
