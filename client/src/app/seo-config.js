@@ -1,7 +1,7 @@
 // app/seo-config.js
 export const seoConfig = {
   // Base domain configuration
-  domain: 'https://shreeMahalaxmmi enterprises.co.in',
+  domain: 'https://shreeMahalaxmmienterprises.co.in',
   
   // Global SEO settings
   global: {
